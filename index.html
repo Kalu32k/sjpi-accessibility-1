@@ -37,14 +37,14 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <!-- Endast en `<title>` används; flera kan orsaka oväntat beteende och påverka SEO samt tillgänglighet negativt. -->
-    <title>A11y News title</title>
+    <title>A11y News</title>
 </head>
 
 <body>
 
     <div class="logo_container">
         <h1 class="logo">A11y News</h1>
-        <h5 class="headline">Welcome to our website!</h5>
+        <h2 class="headline">Welcome to our website!</h2>
     </div>
 
         <!-- Svåråtkomligt inputfällt -->
@@ -61,25 +61,13 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         <span class="nav-entertainment" id="1"><a href="#" target="_blank">Entertainment</a></span>
     </nav>
 
-
-
-    <!-- Dold text och klickbar div. 
-     .hidden-text är nästan osynlig p.g.a. låg opacity och roterad tex -->
-<!--     <p class="hidden-text">This text is invisible.</p>
-    <div class="button">Click here!</div>
-    <div class="container"> -->
-
-        <!-- Två <h1>-taggar i .container kan påverka tillgänglighet och SEO. -->
-        
- 
-
         <div class="article">
             <!-- <marquee>(rullande text) kan vara en intressant effekt på en hemsida, men det kan också vara distraherande för besökarna. -->
             <h3 class="headline">Breaking News: ...!</h3>
             <p>Scientists have discovered a new deep-sea fish with bioluminescent fins off the coast of Australia. The
                 unnamed species is believed to have unique traits that could contribute to future medical research and
                 biotechnology.
-                <a href="#">Click here!</a>
+                <a href="#">Read more here!</a>
             </p>
                 
             
@@ -89,11 +77,17 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
         <div class="article">
             <h3>Lunar New Year: Celebrate with us!</h3>
 
-            <!-- Bilder visas inte, varför? det finns inga -->
+            <!-- Bilder visas inte, varför? -->
             <div class="image-container">
+                <a href="#">
                 <img src="/images/ocean.webp" alt="a picture of the ocean">
+                </a>
+                <a href="#">                
                 <img src="/images/city.webp" alt="a picture of a city">
-                <img src="/images/family.webp" alt="a picture of a family">
+                </a>
+                <a href="#">
+                <img src="/images/family.webp" href="#" alt="a picture of a family">
+                </a>
             </div>
 
             <p>Access the news by pressing the images</p>
@@ -112,20 +106,6 @@ Det finns många sätt att göra en webbplats mer tillgänglig, till exempel att
             <img src="images/forest_gump.webp" alt="Picture of forest gump waving">
         </div>
     </div>
-
-    <!-- En irriterande annons som alltid syns och innehåller en snurrande bild samt en vilseledande text -->
-<!--     <div id="fake-ad">
-        <div class="top-section">
-            <div class="image-container">
-                <img class="rotating-image" src="images/chest.webp" alt="Chest of gold">
-            </div>
-            <p>🎉 You have won $10,000! 🎉</p>
-            <div class="image-container">
-                <img class="rotating-image" src="images/chest.webp" alt="Chest of gold">
-            </div>
-        </div>
-        <p class="btext">Click here to collect your money!</p>
-    </div> -->
 
 
     <script src="script.js" defer></script>
