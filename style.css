@@ -191,8 +191,13 @@ a {
   width: 150px;
 }
 
+.input-container button a {
+  font-size: 25px;
+}
+
 .input-container ::placeholder {
   color: rgb(77, 76, 76);
+  font-size: 25px;
 }
 
 .input-container a {
