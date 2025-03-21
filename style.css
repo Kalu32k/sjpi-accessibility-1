@@ -161,6 +161,8 @@ a {
   width: 100px;
   height: 30px;
   margin: -100px 200px 0 0;
+  width: 400px;
+  height: 70px;
 }
 
 /* Inputfält med röd text och svart ram */
@@ -172,8 +174,8 @@ a {
   border-bottom-left-radius: 15px;
   background-color: white;
   color: darkblue;
-  width: 200px;
-  height: 50px;
+  width: 400px;
+  height: 80px;
 }
 
 /* Knapp med rosa kant, mörkröd bakgrund och roterad */
@@ -185,7 +187,8 @@ a {
   font-size: 5px;
   padding: 5px;
   cursor: pointer;
-  height: 50px;
+  height: 80px;
+  width: 150px;
 }
 
 .input-container ::placeholder {
@@ -200,13 +203,13 @@ a {
 }
 
 /* En knapp med blå bakgrund och vit text */
-.button {
+/* .button {
   display: inline-block;
   padding: 10px;
   background-color: blue;
   color: white;
   cursor: pointer;
-}
+} */
 
 /* En "fake ad" med blinkande bakgrund och fast position längst ner */
 /* #fake-ad {
